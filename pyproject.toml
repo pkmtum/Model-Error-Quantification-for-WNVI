@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dfg-brain-inference"
+version = "0.1.0"
+description = "Variational inference of heterogeneous material parameters from harmonic displacement data (2D brain phantom)."
+authors = ["Vincent Scholz <vincent.scholz@tum.de>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+# Versions pinned to the environment the results were produced with.
+torch = "2.7.1"
+numpy = "2.1.2"
+matplotlib = "3.10.3"
+scipy = "1.16.0"
+mergedeep = "^1.3.4"
+psutil = "7.0.0"
+tqdm = "4.67.1"
+
+[build-system]
+requires = ["poetry-core>=1.9"]
+build-backend = "poetry.core.masonry.api"
